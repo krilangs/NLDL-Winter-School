@@ -1,3 +1,12 @@
+This denoising diffusion probabilistic model takes inspiration from the *denoising-diffusion-pytorch*-library (see original descriptions below). Most of all the code used are directly from this library, with some alterations and additions:\
+**Train_DDPM.py** is the script for starting the training of the DDPM models where training parameters are added.\
+**sen12ms_dataLoader.py** loads the SEN12MS dataset used for training the DDPM model.\
+**requirements.txt** contains the dependencies for running the experiments in this project, using GPU.\
+There are some changes in two of the Python files in the **denoising_diffusion_pytorch**-folder compared to the original:\
+i) Line 75 in *fid_evaluation.py* - real_samples = next(self.dl) -> real_samples = next(self.dl)["image"]
+ii) In *denoising_diffusion_pytorch.py* - loss logging with tensorflow have been added during training, and the SEN12MS dataloader have been implemented.
+
+----------------------------------------------------------------------------------
 <img src="./images/denoising-diffusion.png" width="500px"></img>
 
 ## Denoising Diffusion Probabilistic Model, in Pytorch
