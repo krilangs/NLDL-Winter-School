@@ -4,7 +4,8 @@ This denoising diffusion probabilistic model takes inspiration from the *denoisi
 **requirements.txt** contains the dependencies for running the experiments in this project, using GPU.\
 There are some changes in two of the Python files in the **denoising_diffusion_pytorch**-folder compared to the original:\
 i) Line 75 in *fid_evaluation.py* - real_samples = next(self.dl) -> real_samples = next(self.dl)["image"]
-ii) In *denoising_diffusion_pytorch.py* - loss logging with tensorflow have been added during training, and the SEN12MS dataloader have been implemented.
+ii) In *denoising_diffusion_pytorch.py* - loss logging with tensorflow have been added during training, and the SEN12MS dataloader have been implemented.\
+**Result_figures** contains the produced samples per epoch during training for each of the three experiments uing different beta-schedulers.
 
 ----------------------------------------------------------------------------------
 <img src="./images/denoising-diffusion.png" width="500px"></img>
