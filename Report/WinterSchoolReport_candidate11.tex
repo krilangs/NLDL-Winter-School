@@ -211,7 +211,7 @@ To set up the training process further; AdamW is used as the optimizer to update
 
 \subsection{Experiments}
 \label{subsect:Experiments}
-The work is done by utilizing existing code with DDPMs in the remote sensing domain to learn and generate realistic EO images, and compare the prediction quality for models with different noise schedulers. Smaller changes and additions are made to fit the specific needs for this project. The codes are available at \url{GITHUB_url}.
+The work is done by utilizing existing code with DDPMs in the remote sensing domain to learn and generate realistic EO images, and compare the prediction quality for models with different noise schedulers. Smaller changes and additions are made to fit the specific needs for this project. The codes are available at \url{https://anonymous.4open.science/r/NLDL-Winter-School-3CFD/}.
 
 The DDPM code is mainly built upon the \textit{deonising-diffusion-pytorch} library~\cite{lucidrains2024} for training and sampling with the DDPM. This code will be referred to as the diffusion code from now on for simplification. For proper loading of the SEN12MS dataset, the initial dataloader provided by Schmitt~\cite{ScmittSEN12MSdataset} is used with an addition for doing the pre-processing mentioned in section~\ref{subsubsect:Preprocessing}.
 
